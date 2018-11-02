@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <title>Formulaire Adel</title>
+</head>
+
+<body>
+  <section class="bg">
+
+    <div class="container" <h1>Formulaire de Candidature</h1>
+      <p>Pour postuler aux l'offres d'emploi</p> <br>
+
+      <form class="custom-for" action="#" method="post">
+        <fieldset class="color">
+          <legend>Votre Identité</legend> <br>
+          <div class="first">
+            <p>
+              <label for="firstName">Prénom :<sup>*</sup></label>
+              <input required type="text" name="firstName" id="firstName" placeholder="ex. Jean">
+            </p>
+
+            <p>
+              <label for="Name">Nom :<sup>*</sup></label>
+              <input required type="text" name="Name" id="Name" placeholder="ex. Dupont">
+            </p>
+
+            <p>
+              <label for="Email">Email :<sup>*</sup></label>
+              <input required type="email" name="Email" id="Email" placeholder="ex. jean@dupont.com">
+            </p>
+
+            <p>
+              <label for="Date">Date de naissance :<sup>*</sup></label>
+              <input required type="date" name="Date" id="Date">
+            </p>
+
+            <p>
+              <label for="Message">Texte de motivation :<sup>*</sup></label><br>
+              <textarea required name="Votre Message" placeholder="Votre Texte" rows="15" cols="80"></textarea>
+            </p>
+          </div>
+          <p>
+            <label for="Piece-jointe">Votre CV :<sup>*</sup></label>
+            <input required type="file" name="Piece-jointe" id="Piece-jointe">
+          </p>
+
+          <p>
+            <label for="Séléctionner">Séléctionner un poste :<sup>*</sup></label>
+            <select required class="" name="userChoice" id="preference">
+
+              <option value="Selectonner une option" disabled selected>Postes disponibles</option>
+
+              <optgroup label="Technique">
+                <option value="Warehouseman">Manutentionaire</option>
+                <option value="Technician">Technicien</option>
+              </optgroup>
+
+              <optgroup label="Administration">
+                <option value="Secrtary">Secrétariat</option>
+                <option value="Human Resource">Ressource Humaine</option>
+              </optgroup>
+
+            </select>
+          </p>
+
+          <p>Les langues maitrisés ?<br>
+
+            <input type="checkbox" name="English" id="English" checked>
+            <label for="English">Anglais</label> <br>
+
+            <input type="checkbox" name="German" id="German">
+            <label for="German">Allemand</label> <br>
+
+            <input type="checkbox" name="Spanish" id="Spanish">
+            <label for="Spanish">Espagnol</label> <br>
+          </p>
+
+          <p>
+            Etes-vous véhiculer ? <sup>*</sup><br>
+
+            <input required type="radio" name="satisfaction" value="yes" id="yes">
+            <label for="yes">Oui</label> <br>
+
+            <input required type="radio" name="satisfaction" value="no" id="no">
+            <label for="no">Non</label> <br>
+          </p>
+
+          <p>
+            <input type="submit" name="Valider" value="Valider">
+          </p>
+
+        </fieldset>
+
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
